@@ -14,5 +14,5 @@ Debido a que una red densa no puede procesar eficientemente píxeles crudos, el 
 
 ## 🚀 Cómo empezar (Local)
 1. Clonar el repositorio.
-2. Descargar el dataset desde Kaggle y colocarlo en la carpeta `dataset_raw/`.
+2. Descargar el dataset desde Kaggle [AI Generated Images vs Real Images](https://www.kaggle.com/datasets/cashbowman/ai-generated-images-vs-real-images) y descomprimirlo dentro de la carpeta `dataset_raw/`.
 3. Instalar dependencias: `pip install -r requirements.txt` (Próximamente).
