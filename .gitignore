@@ -1,2 +1,4 @@
 dataset_raw/
 data/*.csv
+.venv/
+__pycache__/
