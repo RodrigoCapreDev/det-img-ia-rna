@@ -10,14 +10,28 @@ Debido a que una red densa no puede procesar eficientemente píxeles crudos, el 
 ## 📁 Estructura del Repositorio
 * `dataset_raw/` - Imágenes originales extraídas de Kaggle (No se suben al repo).
 * `src/` - Scripts de preprocesamiento (`.py`) y Notebooks de entrenamiento (`.ipynb`).
-* `data/` - Archivo CSV con los patrones numéricos generados.
+* `data/` - CSVs con patrones (`patrones_train.csv`, `patrones_test.csv`).
 
 ## 🚀 Cómo empezar (Local)
 1. Clonar el repositorio.
-2. Descargar el dataset desde Kaggle [AI Generated Images vs Real Images](https://www.kaggle.com/datasets/cashbowman/ai-generated-images-vs-real-images) y descomprimirlo dentro de la carpeta `dataset_raw/`.
+2. Descargar el dataset y descomprimirlo en `dataset_raw/` con esta estructura:
+   ```
+   dataset_raw/
+   ├── train/
+   │   ├── REAL/
+   │   └── FAKE/
+   └── test/
+       ├── REAL/
+       └── FAKE/
+   ```
 3. Instalar dependencias: 
    ```bash
    pip install -r requirements.txt
-4. Ejecutar el script de preprocesamiento para generar el CSV de patrones:
+4. Ejecutar el script de preprocesamiento (genera un CSV por split):
     ```bash
     python src/preprocesamiento.py
+    ```
+    El dataset completo tiene ~120.000 imágenes; para una prueba rápida:
+    ```bash
+    python src/preprocesamiento.py --max-por-clase 100
+    ```
