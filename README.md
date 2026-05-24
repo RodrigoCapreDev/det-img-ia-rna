@@ -52,3 +52,13 @@ Debido a que una red densa no puede procesar eficientemente píxeles crudos, el 
     ```bash
     python src/01_preprocesamiento.py --max-por-clase 100
     ```
+5. Entrenar la Red Neuronal y evaluar métricas:
+    Abrí y ejecutá la notebook `src/02_entrenamiento_mlp.ipynb` para alimentar el Perceptrón Multicapa con los patrones numéricos extraídos. Al finalizar, la notebook generará:
+
+    - Reporte de Clasificación: Precision, Recall, F1-Score y Accuracy.
+
+    - Curva de Pérdida (Loss Curve): Monitoreo de la convergencia del Backpropagation.
+
+    - Matriz de Confusión: Visualización detallada de aciertos y falsos positivos/negativos.
+
+    - Importancia de Features: Análisis de qué filtros (Laplaciano, ELA, cromatismo) aportaron más al modelo.
