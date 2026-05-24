@@ -46,9 +46,9 @@ Debido a que una red densa no puede procesar eficientemente píxeles crudos, el 
         ```
 4. Ejecutar el script de preprocesamiento (genera un CSV por split):
     ```bash
-    python src/preprocesamiento.py
+    python src/01_preprocesamiento.py
     ```
     El dataset completo tiene ~120.000 imágenes; para una prueba rápida:
     ```bash
-    python src/preprocesamiento.py --max-por-clase 100
+    python src/01_preprocesamiento.py --max-por-clase 100
     ```
